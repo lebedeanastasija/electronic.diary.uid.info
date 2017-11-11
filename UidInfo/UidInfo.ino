@@ -35,7 +35,7 @@ void loop() {
      inStringHex += String(mfrc522.uid.uidByte[i], HEX);
   }
   
-  long unsigned uid = strtol(inStringHex.c_str(),NULL,16);
-  Serial.println(uid);
+  //long unsigned uid = strtol(inStringHex.c_str(),NULL,16);
+  Serial.println(inStringHex);
   mfrc522.PICC_HaltA(); // Stop reading
 }
